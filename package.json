@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "test": "nodemon src/index.js",
     "start": "node src/app.js"
   },
   "keywords": [],
