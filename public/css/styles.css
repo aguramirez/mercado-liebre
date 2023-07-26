@@ -1,0 +1,248 @@
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: #EAC926;
+    display: inline;
+}
+
+body a {
+    text-decoration: none;
+    color: #333333;
+}
+
+body a:hover {
+    color: #007bff;
+}
+
+.headerDelHeader{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.logo{
+    width: 40%;
+    margin: auto;
+}
+
+.busqueda{
+    width: 50%;
+    display: flex;
+}
+
+.busqueda input{
+    width: 100%;
+}
+
+.links-navbar{
+    display: none;
+}
+
+.burger-menu{
+    background-color: #1259c3;
+    text-align: center;
+    color: white;
+    border-radius: 5px;
+    margin: auto;
+    display: table;
+    padding: 5px;
+}
+
+body img{
+    width: 100%;
+    margin-top: 5px;
+}
+
+.ayuda{
+    font-size: 12px;
+    text-align: center;
+}
+
+.titulares{
+    font-size: 24px;
+}
+
+
+main{
+    background-color: #ebebeb;
+    width: 90%;
+    text-align: center;
+    padding-bottom: 5px;
+    margin: auto;
+}
+
+section{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-bottom: 20px;
+}
+
+
+.articulos{
+    justify-content: center;
+    margin: 10px;
+    background-color: white;
+    width: 90%;
+    transition-property: box-shadow;
+    transition-duration: 0.5s;
+}
+
+.articulos:hover {
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+}
+
+.articulos img{
+    width: 90%;
+    margin: 0px;
+}
+
+.detalles{
+    padding: 15px;
+    border-top: solid #ebebeb 1px;
+    text-align: left;
+}
+
+
+.detalles p{
+    margin: 0px;
+    width: fit-content;
+    display: flex;
+}
+
+.precios{
+    font-size: 18px;
+}
+
+.descuentos {
+    font-size: 16px;
+    color: rgb(6, 236, 6);
+}
+
+.detalles .descripciones{
+    font-size: 16px;
+    color: white;
+    transition-property: color, padding-top;
+    transition-duration: 0.5s;
+}
+
+.articulos:hover .detalles .descripciones{
+    color: #666;
+    /* padding-top: 10px; */
+}
+
+.detalles i{
+    transition-property: position, rotate;
+    transition-duration: 2s;
+}
+
+.detalles i:hover{
+    animation: i 3s infinite;
+}
+
+@keyframes i{
+    50% {transform: translateX(240px) rotate(360deg);}
+}
+
+footer{
+    background-color: white;
+    text-align: center;
+    color: #666;
+    padding: 10px;
+    margin: 10px;
+}
+
+footer i{
+    font-size: 2xs;
+    color: #1259c3;
+}
+
+footer i:hover{
+    color: #5a93e9;
+}
+
+
+@media (min-width: 361px) {
+    /* tablets */
+
+    .logo{
+        width: 30%;
+        margin: 10px
+    }
+
+    .busqueda{
+        width: 30%;
+    }
+
+    .ayuda{
+        width: 30%;
+    }
+
+    section{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    section h3{
+        width: 100%;
+    }
+
+    .articulos{
+        width: 40%;
+    }
+
+    @keyframes i{
+        50% {transform: translateX(85px) rotate(360deg);}
+    }
+
+    .links-navbar{
+        display: flex;
+        margin: auto;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        padding: 0%;
+    }
+
+    .botones-izq, .botones-der {
+        display: flex;
+        flex-wrap: wrap;
+        width: 40%;
+        justify-content: space-evenly;
+    }
+
+    .links-navbar li{
+        display: flex;
+        align-self: flex-start;
+    }
+
+    .burger-menu {
+        display: none;
+    }
+
+    .descripciones{
+        display: block;
+    }
+}
+
+@media (min-width: 769px) {
+    /* desktops */
+    .articulos{
+        width: 20%;
+    }
+
+    @keyframes i{
+        50% {transform: translateX(115px) rotate(360deg);}
+    }
+
+    footer{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .footer-card{
+        width: 30%;
+    }
+}

@@ -1,0 +1,202 @@
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: #EAC926;
+    display: inline;
+}
+
+body a {
+    text-decoration: none;
+    color: #333333;
+}
+
+body a:hover {
+    color: #007bff;
+}
+
+.headerDelHeader{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.logo{
+    width: 40%;
+    margin: auto;
+}
+
+.busqueda{
+    width: 50%;
+    display: flex;
+}
+
+.busqueda input{
+    width: 100%;
+}
+
+.links-navbar{
+    display: none;
+}
+
+.burger-menu{
+    background-color: #1259c3;
+    text-align: center;
+    color: white;
+    border-radius: 5px;
+    margin: auto;
+    display: table;
+    padding: 5px;
+}
+
+body img{
+    width: 100%;
+    margin-top: 5px;
+}
+
+.ayuda{
+    font-size: 12px;
+    text-align: center;
+}
+
+.titulares{
+    font-size: 24px;
+}
+
+
+main{
+    background-color: #ebebeb;
+    width: 90%;
+    text-align: center;
+    padding: 30px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+.div-form {
+    width: 70%;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+}
+main input{
+    padding: 10px;
+    border: 1px solid #dddddd;
+    border-radius: 4px;
+    outline: none;
+    transition: border-color 0.2s ease-in-out;
+}
+label {
+    font-weight: bold;
+    color: #555555;
+}
+.inputss{
+    padding: 10px;
+}
+
+
+.div-form button {
+    background-color: #007bff;
+    color: #ffffff;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+    margin: 10px;
+}
+
+.div-form button:hover {
+    background-color: #0056b3;
+}
+
+footer{
+    background-color: white;
+    text-align: center;
+    color: #666;
+    padding: 10px;
+    margin: 10px;
+}
+
+i footer{
+    font-size: 2em;
+    color: #1259c3;
+}
+
+
+@media (min-width: 361px) {
+    /* tablets */
+
+    .logo{
+        width: 30%;
+        margin: 10px
+    }
+
+    .busqueda{
+        width: 30%;
+    }
+
+    .ayuda{
+        width: 30%;
+    }
+
+    section{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    section h3{
+        width: 100%;
+    }
+
+    .articulos{
+        width: 40%;
+    }
+
+    .links-navbar{
+        display: flex;
+        margin: auto;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        padding: 0%;
+    }
+
+    .botones-izq, .botones-der {
+        display: flex;
+        flex-wrap: wrap;
+        width: 40%;
+        justify-content: space-evenly;
+    }
+
+    .links-navbar li{
+        display: flex;
+        align-self: flex-start;
+    }
+
+    .burger-menu {
+        display: none;
+    }
+
+    .descripciones{
+        display: block;
+    }
+}
+
+@media (min-width: 769px) {
+    /* desktops */
+    .articulos{
+        width: 20%;
+    }
+
+    footer{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .footer-card{
+        width: 30%;
+    }
+}
